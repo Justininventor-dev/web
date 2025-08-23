@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Epic Web Creator — 🔥 Creador Épico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="particles"></div>
+  <main class="wrap">
+    <div id="app" class="card">
+      <!-- Intro -->
+      <section id="intro" class="step center">
+        <div class="emoji-hero">⚡🚀⚡</div>
+        <h1 class="shimmer">¡BIENVENIDO AL CREADOR ÉPICO!</h1>
+        <p class="muted">Tu viaje para crear páginas empieza ahora ✨</p>
+      </section>
+
+      <!-- Name -->
+      <section id="step-name" class="step hidden">
+        <h2>¿Cuál es tu nombre?</h2>
+        <input id="input-name" maxlength="40" placeholder="Tu nombre..." />
+        <div class="actions">
+          <button id="btn-name-next" class="primary" disabled>Continuar →</button>
+        </div>
+      </section>
+
+      <!-- Age -->
+      <section id="step-age" class="step hidden">
+        <h2>¿Cuántos años tienes? </h2>
+        <input id="input-age" type="number" min="1" max="120" placeholder="Edad" />
+        <div class="actions two">
+          <button class="secondary" id="btn-age-back">← Atrás</button>
+          <button class="primary" id="btn-age-next">Siguiente</button>
+        </div>
+      </section>
+
+      <!-- Country -->
+      <section id="step-country" class="step hidden">
+        <h2>¿De qué país eres?</h2>
+        <input id="input-country" maxlength="40" placeholder="Tu país..." />
+        <div class="actions two">
+          <button class="secondary" id="btn-country-back">← Atrás</button>
+          <button class="primary" id="btn-country-next">Siguiente</button>
+        </div>
+      </section>
+
+      <!-- Goal -->
+      <section id="step-goal" class="step hidden">
+        <h2>¿Cuál es tu objetivo principal?</h2>
+        <textarea id="input-goal" maxlength="1200" placeholder="Describe brevemente cuál es tu objetivo ..."></textarea>
+        <div class="actions two">
+          <button class="secondary" id="btn-goal-back">← Atrás</button>
+          <button class="primary" id="btn-goal-next">Continuar</button>
+        </div>
+      </section>
+
+      <!-- Site count -->
+      <section id="step-count" class="step hidden center">
+        <h2>¿Cuántos sitios quieres crear? (1-3)</h2>
+        <div class="count-buttons">
+          <button class="count-btn active" data-count="1">1</button>
+          <button class="count-btn" data-count="2">2</button>
+          <button class="count-btn" data-count="3">3</button>
+        </div>
+        <div class="actions two">
+          <button class="secondary" id="btn-count-back">← Atrás</button>
+          <button class="primary" id="btn-count-next">Siguiente</button>
+        </div>
+      </section>
+
+      <!-- Domains -->
+      <section id="step-domains" class="step hidden">
+        <h2>Define los dominios</h2>
+        <p class="muted">Formato: https://(nombre).netlify.app — solo letras, números y guiones</p>
+        <div id="domains-container"></div>
+        <div class="actions two">
+          <button class="secondary" id="btn-domains-back">← Atrás</button>
+          <button class="primary" id="btn-domains-next" disabled>Describir →</button>
+        </div>
+      </section>
+
+      <!-- Descriptions -->
+      <section id="step-desc" class="step hidden">
+        <h2>Describe cada sitio</h2>
+        <div id="desc-container"></div>
+        <div class="actions two">
+          <button class="secondary" id="btn-desc-back">← Atrás</button>
+          <button class="primary" id="btn-desc-next">Generar Resumen</button>
+        </div>
+      </section>
+
+      <!-- Final -->
+      <section id="step-final" class="step hidden">
+        <h2 id="final-title"></h2>
+        <div id="summary" class="summary-box"></div>
+
+        <div class="actions wrap">
+          <button id="btn-download" class="primary">📥 Descargar imagen</button>
+
+
+        
+        </div>
+        <p class="muted center">📩 Envía la imagen a <strong>Genioinventor</strong> en Discord</p>
+        <p class="muted center">📩 Envía la imagen a <strong>321 100 2280</strong> en WhatsApp</p>
+      </section>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </main>
+
+  <!-- Confetti canvas (floating) -->
+  <canvas id="confetti-canvas" class="confetti"></canvas>
+  <canvas id="hidden-canvas" class="hidden"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
